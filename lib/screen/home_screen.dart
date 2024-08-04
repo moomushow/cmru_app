@@ -1,3 +1,4 @@
+import 'package:cmru_app/screen/widget/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -10,6 +11,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String name = "Teerapong Jaikumma";
+  String accountEmail = "teerapong@cmru.ac.th";
 
   void changeName() {
     setState(() {
@@ -17,10 +19,16 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  // void changeName2() {
+  //   setState(() {
+  //     name = "errorsomchai";
+  //   });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       appBar: AppBar(
           title: const Text(
             'Home',

@@ -1,3 +1,4 @@
+import 'package:cmru_app/screen/about_screen.dart';
 import 'package:cmru_app/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,16 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CMRU App DEMO',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
-        useMaterial3: true,
-      ),
-      initialRoute: '/home',
-      routes: {
-        '/home': (context) => const HomeScreen(),
-        '/about': (context) => const Placeholder()
-      },
-    );
+        title: 'CMRU App DEMO',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
+          useMaterial3: true,
+        ),
+        initialRoute: '/home',
+        routes: {
+          '/home': (context) => const HomeScreen(),
+          '/setting': (context) => const Placeholder(),
+          '/about': (context) => const AboutScreen()
+        });
   }
 }
