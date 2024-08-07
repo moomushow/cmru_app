@@ -1,5 +1,7 @@
 import 'package:cmru_app/screen/about_screen.dart';
 import 'package:cmru_app/screen/home_screen.dart';
+import 'package:cmru_app/screen/setting_screen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/home',
         routes: {
           '/home': (context) => const HomeScreen(),
-          '/setting': (context) => const Placeholder(),
+          '/setting': (context) => const SettingScreen(),
           '/about': (context) => const AboutScreen()
         });
   }

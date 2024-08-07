@@ -32,7 +32,9 @@ class _MyDrawerState extends State<MyDrawer> {
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Setting'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, '/setting');
+            },
           ),
         ])
       ]),
